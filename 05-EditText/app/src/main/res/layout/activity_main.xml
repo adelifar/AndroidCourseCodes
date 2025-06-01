@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Enter your name"
+        android:text="Hello Android Developers"
+        android:textColor="#3F51B5"
+        android:textStyle="italic"
+        android:textSize="22sp"
+        android:maxLength="80"
+        android:layout_margin="20dp"
+        android:inputType="text"
+
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Enter your number"
+        android:text=""
+        android:textColor="#3F51B5"
+        android:textStyle="italic"
+        android:textSize="22sp"
+        android:maxLength="80"
+
+        android:inputType="numberDecimal"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Enter your time"
+        android:text=""
+        android:textColor="#3F51B5"
+        android:textStyle="italic"
+        android:textSize="22sp"
+        android:maxLength="80"
+
+        android:inputType="time"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Enter your time"
+        android:text=""
+        android:textColor="#3F51B5"
+        android:textStyle="italic"
+        android:textSize="22sp"
+        android:maxLength="80"
+
+        android:inputType="textCapWords"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
