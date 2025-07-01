@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">24-BooKGrid</string>
+    <string name="anakarnina">آناکارنینا</string>
+    <string name="badgir">بلندی های بادگیر</string>
+    <string name="big_gatsby">گتسبی بزرگ</string>
+    <string name="catch22">تبصره 22</string>
+    <string name="don">دن کیشوت</string>
+    <string name="jenayat">جنایات و مکافات</string>
+    <string name="khashm">خوشه های خشم</string>
+    <string name="mobi">موبی دیک</string>
+    <string name="nator">ناطور دشت</string>
+    <string name="nineteen">1984</string>
+    <string name="sad_sal">صد سال تنهایی</string>
+    <string name="war">جنگ و صلح</string>
+</resources>
