@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<data>
+    <variable
+        name="user"
+        type="ir.mehdiadeli.a35listdatabinding.model.User" />
+</data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_margin="12dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{user.name}"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@{user.email}"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/nameText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
