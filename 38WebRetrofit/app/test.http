@@ -1,0 +1,19 @@
+POST http://jsonplaceholder.typicode.com/posts
+Content-Type: application/json
+
+{
+"userId":450,
+"title":"Mehdi Adeli",
+"body":"Hello from tosinso website"
+}
+
+###
+GET http://jsonplaceholder.typicode.com/posts/88
+Accept: application/json
+
+###
+GET http://jsonplaceholder.typicode.com/posts
+Accept: application/json
+
+###
+
