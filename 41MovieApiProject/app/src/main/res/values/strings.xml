@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">41-MovieApiProject</string>
+    <string name="api_key">9c4ae0c7a5a94c0a697eaec53a25cb0e</string>
+    <string name="image_base_url">https://image.tmdb.org/t/p/w500/</string>
+</resources>

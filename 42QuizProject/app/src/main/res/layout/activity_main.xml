@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="question"
+            type="ir.mehdiadeli.a42_quizproject.model.Question" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back1"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="@string/header"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/usernameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:gravity="center"
+            android:hint="username:"
+            app:layout_constraintTop_toBottomOf="@id/titleText" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="140dp"
+            android:text="@{question.questionText}"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleText" />
+
+        <RadioGroup
+            android:id="@+id/optionsRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:layout_editor_absoluteX="16dp">
+
+            <RadioButton
+                android:id="@+id/option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{question.option1}" />
+
+            <RadioButton
+                android:id="@+id/option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{question.option2}" />
+
+            <RadioButton
+                android:id="@+id/option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{question.option3}" />
+
+            <RadioButton
+                android:id="@+id/option4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{question.option4}" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/nextQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

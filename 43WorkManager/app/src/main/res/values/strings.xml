@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">43-WorkManager</string>
+    <string name="max">max</string>
+    <string name="message">message</string>
+</resources>

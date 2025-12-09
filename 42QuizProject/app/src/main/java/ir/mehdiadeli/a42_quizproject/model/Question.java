@@ -1,0 +1,97 @@
+package ir.mehdiadeli.a42_quizproject.model;
+
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class Question {
+    @SerializedName("id")
+    @Expose
+    private int id;
+    @SerializedName("question_text")
+    @Expose
+    private String questionText;
+    @SerializedName("option1")
+    @Expose
+    private String option1;
+    @SerializedName("option2")
+    @Expose
+    private String option2;
+    @SerializedName("option3")
+    @Expose
+    private String option3;
+    @SerializedName("option4")
+    @Expose
+    private String option4;
+    @SerializedName("correct_option")
+    @Expose
+    private int correctOption;
+
+    public Question(int id, String questionText, String option1, String option2, String option3, String option4, int correctOption) {
+        this.id = id;
+        this.questionText = questionText;
+        this.option1 = option1;
+        this.option2 = option2;
+        this.option3 = option3;
+        this.option4 = option4;
+        this.correctOption = correctOption;
+    }
+
+    public Question() {
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getQuestionText() {
+        return questionText;
+    }
+
+    public void setQuestionText(String questionText) {
+        this.questionText = questionText;
+    }
+
+    public String getOption1() {
+        return option1;
+    }
+
+    public void setOption1(String option1) {
+        this.option1 = option1;
+    }
+
+    public String getOption2() {
+        return option2;
+    }
+
+    public void setOption2(String option2) {
+        this.option2 = option2;
+    }
+
+    public String getOption3() {
+        return option3;
+    }
+
+    public void setOption3(String option3) {
+        this.option3 = option3;
+    }
+
+    public String getOption4() {
+        return option4;
+    }
+
+    public void setOption4(String option4) {
+        this.option4 = option4;
+    }
+
+    public int getCorrectOption() {
+        return correctOption;
+    }
+
+    public void setCorrectOption(int correctOption) {
+        this.correctOption = correctOption;
+    }
+}
