@@ -76,7 +76,7 @@
 ## 🏃 راهنمای اجرای پروژه‌ها
 1.  این مخزن را **Clone** یا دانلود کنید:
     ```bash
-    git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+    git clone https://github.com/adelifar/AndroidCourseCodes.git
     ```
 2.  نرم‌افزار **Android Studio** را باز کنید.
 3.  گزینه **Open an Existing Project** را انتخاب کنید.
