@@ -93,4 +93,4 @@ If you found this code helpful or are taking the course:
 
 ---
 
-Happy Coding! 💻🚀
+Happy Adnroid Coding! 💻🚀
